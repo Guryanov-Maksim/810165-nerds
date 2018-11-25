@@ -69,6 +69,36 @@
                     <button class="button" type="submit">Показать</button>
                 </form>
             </section>
+            <section class="assortment">
+                <h2 class="visually-hidden">Сортировка шаблонов</h2>
+                <form class="assortment-form" action="https://echo.htmlacademy.ru" method="get">
+                    <p>Сортировать:</p>
+                    <ul class="assortment-categories">
+                        <li class="assortment-item">
+                            <input class="visually-hidden" id="sort-price" type="radio" name="sort" value="price" checked>
+                            <label for="sort-price">По цене</label>
+                        </li>
+                        <li class="assortment-item">
+                            <input class="visually-hidden" id="sort-type" type="radio" name="sort" value="type">
+                            <label for="sort-type">По типу</label>
+                        </li>
+                        <li class="assortment-item">
+                            <input class="visually-hidden" id="sort-name" type="radio" name="sort" value="name">
+                            <label for="sort-name">По названию</label>
+                        </li>
+                    </ul>
+                    <ul class="assortment-direction">
+                        <li class="assotrment-item">
+                            <input  id="sort-up" type="radio" name="direction" value="up" checked>
+                            <label class="visually-hidden" for="sort-up">По возрастанию</label>
+                        </li>
+                        <li class="assotrment-item">
+                            <input  id="sort-down" type="radio" name="direction" value="down">
+                            <label class="visually-hidden" for="sort-down">По убыванию</label>
+                        </li>                
+                    </ul>
+                </form>                
+            </section>
             <section class="catalog">
                 <h2 class="visually-hidden">Каталог шаблонов</h2>
                 <ul>
