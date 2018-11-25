@@ -25,6 +25,15 @@
                 <h2 class="visually-hidden">Фильтр шаблонов</h2>
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                     <fieldset>
+                        <legend>Стоимость:</legend>
+                        <button class="thumb" type="button"><img src="img/filter-button.svg" alt="Ползунок слева"></button>
+                        <button class="thumb" type="button"><img src="img/filter-button.svg" alt="Ползунок справа"></button>
+                        <label for="left-value">От</label>
+                        <output id="left-value" name="left-value">0</output>
+                        <label for="right-value">До</label>
+                        <output id="right-value" name="right-value">15000</output>              
+                    </fieldset>
+                    <fieldset>
                         <legend>Сетка</legend>
                         <ul>
                             <li class="filter-option">
