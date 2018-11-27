@@ -39,7 +39,8 @@ a {
 }
 
 .site-navigation,
-.products-list {
+.products-list,
+.social-list {
     list-style: none;
 }
 
@@ -145,12 +146,21 @@ a {
     filter: opacity(0.3);
 }
 
-
-
 .button-app:active span{
     filter: opacity(0.3);
 }
 
 .button-presentation:active span{
     filter: opacity(0.3);
+}
+
+.main-footer b {
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.main-footer p {
+    line-height: 22px;
+    color: #444444;
 }
