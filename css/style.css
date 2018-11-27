@@ -38,19 +38,15 @@ a {
     color: #fb565a; 
 }
 
-.site-navigation {
+.site-navigation,
+.products-list {
     list-style: none;
-}
-
-
-.button {
-    color: #ffffff;
 }
 
 .button-slide {
     font-size: 16px;
     line-height: 18px;
-    
+
     background-color: #fb565a;
 }
 
@@ -76,4 +72,85 @@ a {
     background-image: url("../img/slide-3.png");
     background-repeat: no-repeat;
     background-position: right;
+}
+
+.products-item h3 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.products-web {
+    background-image: url("../img/illustration-web.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.products-app {
+    background-image: url("../img/illustration-app.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.products-presentation {
+    background-image: url("../img/illustration-presentation.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.button-web {
+    background-color: #fb565a;
+}
+
+.button-app {
+    background-color: #00ca74;
+}
+
+.button-presentation {
+    background-color: #efc84a;
+}
+
+.button-web:hover {
+    background-color: #e74246;
+}
+
+.button-app:hover {
+    background-color: #00bc6c;
+}
+
+.button-presentation:hover {
+    background-color: #eab534;
+}
+
+.button-web:active {
+    background-color: #d7373b;
+}
+
+.button-app:active {
+    background-color: #00aa62;
+}
+
+.button-presentation:active {
+    background-color: #e5a722;
+}
+
+.button-web:active span{
+    filter: opacity(0.3);
+}
+
+
+
+.button-app:active span{
+    filter: opacity(0.3);
+}
+
+.button-presentation:active span{
+    filter: opacity(0.3);
 }
