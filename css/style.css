@@ -13,12 +13,12 @@ body {
 
 a {
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .main-header,
 .slides {
     background-color: #eeeeee;
-    text-transform: uppercase;
 }
 
 .site-navigation {
@@ -28,17 +28,25 @@ a {
 
 .site-navigation a,
 .basket {
-   color: #000000; 
+    color: #000000;
 }
 
 .site-navigation a:hover,
 .basket:hover,
 .site-navigation a:focus,
 .basket:focus {
-   color: #fb565a; 
+    color: #fb565a; 
 }
 
 .site-navigation {
     list-style: none;
 }
 
+
+.button {
+    color: #ffffff;
+}
+
+.button-slide {
+    background-color: #fb565a;
+}
