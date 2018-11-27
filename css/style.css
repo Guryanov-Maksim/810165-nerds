@@ -48,5 +48,32 @@ a {
 }
 
 .button-slide {
+    font-size: 16px;
+    line-height: 18px;
+    
     background-color: #fb565a;
+}
+
+.slide-slogan {
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+}
+
+.slides-item:nth-child(1) {
+    background-image: url("../img/slide-1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.slides-item:nth-child(2) {
+    background-image: url("../img/slide-2.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}    
+
+.slides-item:nth-child(3) {
+    background-image: url("../img/slide-3.png");
+    background-repeat: no-repeat;
+    background-position: right;
 }
