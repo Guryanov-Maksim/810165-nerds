@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #283136;
+
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header,
+.slides {
+    background-color: #eeeeee;
+    text-transform: uppercase;
+}
+
+.site-navigation {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.site-navigation a,
+.basket {
+   color: #000000; 
+}
+
+.site-navigation a:hover,
+.basket:hover,
+.site-navigation a:focus,
+.basket:focus {
+   color: #fb565a; 
+}
+
+.site-navigation {
+    list-style: none;
+}
+
