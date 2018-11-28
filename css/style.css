@@ -179,6 +179,14 @@ a {
     background: #fb565a;
 }
 
+.button-long:hover {
+    background: #e74246;
+}
+
+.button-long:active {
+    background: #d7373b;
+}
+
 .filter legend {
     font-size: 18px;
     font-weight: 700;
