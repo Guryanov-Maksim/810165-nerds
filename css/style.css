@@ -46,7 +46,8 @@ a {
 .site-navigation,
 .products-list,
 .social-list,
-.catalog-list {
+.catalog-list,
+.pattern-type {
     list-style: none;
 }
 
@@ -191,3 +192,35 @@ a {
     background-color: #fb565a;
 }
 
+.filter legend {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.filter-option {
+    font-size: 16px;
+    line-height: 20px;
+    color: #283136;
+}
+
+.button-filter {
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #eeeeee;
+}
+
+.button-filter:hover {
+    background-color: #dfdfdf;
+}
+
+.button-filter:active {
+    background-color: #d5d5d5;
+}
+
+.button-filter:active span {
+    filter: opacity(0.3);
+}
