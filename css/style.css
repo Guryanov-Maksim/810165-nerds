@@ -22,7 +22,7 @@ a {
 
 .main-header,
 .slides,
-.item-particular {
+.pattern-particular {
     background-color: #eeeeee;
 }
 
@@ -171,7 +171,7 @@ a {
     color: #444444;
 }
 
-.item-name {
+.pattern-name {
     font-size: 18px;
     line-height: 30px;
     color: #000000;
