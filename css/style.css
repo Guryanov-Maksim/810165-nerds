@@ -16,8 +16,13 @@ a {
     text-transform: uppercase;
 }
 
+.container h1 {
+    background-color: #eeeeee;
+}
+
 .main-header,
-.slides {
+.slides,
+.item-particular {
     background-color: #eeeeee;
 }
 
@@ -40,7 +45,8 @@ a {
 
 .site-navigation,
 .products-list,
-.social-list {
+.social-list,
+.catalog-list {
     list-style: none;
 }
 
@@ -164,3 +170,24 @@ a {
     line-height: 22px;
     color: #444444;
 }
+
+.item-name {
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.catalog-item p {
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+}
+
+.button-long {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+
+    background-color: #fb565a;
+}
+
