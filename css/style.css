@@ -8,7 +8,7 @@ body {
     font-weight: 400;
     color: #283136;
 
-    background-color: #fff;
+    background: #fff;
 }
 
 a {
@@ -17,13 +17,13 @@ a {
 }
 
 .container h1 {
-    background-color: #eee;
+    background: #eee;
 }
 
 .main-header,
 .slides,
 .pattern-particular {
-    background-color: #eee;
+    background: #eee;
 }
 
 .site-navigation {
@@ -55,7 +55,7 @@ a {
 .button-slide {
     font-size: 16px;
     line-height: 18px;
-    background-color: #fb565a;
+    background: #fb565a;
 }
 
 .slide-slogan {
@@ -65,21 +65,15 @@ a {
 }
 
 .slides-item:nth-child(1) {
-    background-image: url("../img/slide-1.png");
-    background-repeat: no-repeat;
-    background-position: right;
+    background: url("../img/slide-1.png") no-repeat right;
 }
 
 .slides-item:nth-child(2) {
-    background-image: url("../img/slide-2.png");
-    background-repeat: no-repeat;
-    background-position: right;
+    background: url("../img/slide-2.png") no-repeat right;
 }    
 
 .slides-item:nth-child(3) {
-    background-image: url("../img/slide-3.png");
-    background-repeat: no-repeat;
-    background-position: right;
+    background: url("../img/slide-3.png") no-repeat right;
 }
 
 .products-item h3 {
@@ -90,22 +84,15 @@ a {
 }
 
 .products-web {
-    background-image: url("../img/illustration-web.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../img/illustration-web.png") no-repeat center;
 }
 
 .products-app {
-    background-image: url("../img/illustration-app.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../img/illustration-app.png") no-repeat center;
 }
 
 .products-presentation {
-    background-image: url("../img/illustration-presentation.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
+    background: url("../img/illustration-presentation.png") no-repeat center;
 
 .button {
     font-size: 16px;
@@ -114,39 +101,39 @@ a {
 }
 
 .button-web {
-    background-color: #fb565a;
+    background: #fb565a;
 }
 
 .button-app {
-    background-color: #00ca74;
+    background: #00ca74;
 }
 
 .button-presentation {
-    background-color: #efc84a;
+    background: #efc84a;
 }
 
 .button-web:hover {
-    background-color: #e74246;
+    background: #e74246;
 }
 
 .button-app:hover {
-    background-color: #00bc6c;
+    background: #00bc6c;
 }
 
 .button-presentation:hover {
-    background-color: #eab534;
+    background: #eab534;
 }
 
 .button-web:active {
-    background-color: #d7373b;
+    background: #d7373b;
 }
 
 .button-app:active {
-    background-color: #00aa62;
+    background: #00aa62;
 }
 
 .button-presentation:active {
-    background-color: #e5a722;
+    background: #e5a722;
 }
 
 .button-web:active span{
@@ -188,7 +175,7 @@ a {
     font-size: 16px;
     line-height: 18px;
     color: #fff;
-    background-color: #fb565a;
+    background: #fb565a;
 }
 
 .filter legend {
@@ -196,7 +183,7 @@ a {
     font-weight: 700;
     line-height: 30px;
     color: #000;
-    
+
     text-transform: uppercase;
 }
 
@@ -209,15 +196,15 @@ a {
 .button-filter {
     color: #000;
     text-transform: uppercase;
-    background-color: #eee;
+    background: #eee;
 }
 
 .button-filter:hover {
-    background-color: #dfdfdf;
+    background: #dfdfdf;
 }
 
 .button-filter:active {
-    background-color: #d5d5d5;
+    background: #d5d5d5;
 }
 
 .button-filter:active span {
