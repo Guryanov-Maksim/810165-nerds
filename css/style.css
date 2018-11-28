@@ -47,7 +47,8 @@ a {
 .products-list,
 .social-list,
 .catalog-list,
-.pattern-type {
+.pattern-type,
+.slides-switches {
     list-style: none;
 }
 
