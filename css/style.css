@@ -16,6 +16,14 @@ a {
     text-transform: uppercase;
 }
 
+.container {
+    display: flex;
+    width: 1160px;
+    padding: 0 20px;    
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
 .container h1 {
     background: #eee;
 }
@@ -26,9 +34,30 @@ a {
     background: #eee;
 }
 
+.main-navigation {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 860px;
+    justify-content: space-between;
+}
+
 .site-navigation {
+    padding: 0;
+    margin: 0;
+    width: 498px;
+
     font-size: 16px;
     line-height: 30px;
+}
+
+.main-header-logo {
+    width: 160px;
+    height: 65px; 
+}
+
+.backet {
+    width: 160px;
 }
 
 .site-navigation a,
