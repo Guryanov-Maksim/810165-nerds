@@ -9,7 +9,7 @@
     </head>
     <body>
         <header class="main-header">
-            <div class="container">
+            <div class="container-header">
                 <nav class="main-navigation">
                     <a class="main-header-logo">
                         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
@@ -24,46 +24,48 @@
                 <a class="basket" href="#">Корзина</a>
             </div>           
         </header>
-        <main class="container">
+        <main class="">
             <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
-            <section class="slides">
-                <h2 class="visually-hidden">Преимущества</h2>
-                <ul class="slides-list">
-                    <li class="slides-item">
-                        <b class="slide-slogan">Долго, дорого, скрупулезно.</b>
-                        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                        <a class="button button-slide" href="#">Узнать больше</a>
-                    </li>
-                    <li class="slides-item">
-                        <b class="slide-slogan">Любим математику как никто другой</b>
-                        <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                        <a class="button button-slide" href="#">Узнать больше</a>
-                    </li>
-                    <li class="slides-item">
-                        <b class="slide-slogan">Только ночь, только хардкор</b>
-                        <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                        <a class="button button-slide" href="#">Узнать больше</a>
-                    </li>
-                </ul>
-                <ul class="slides-switches">
-                    <li class="slide-radio">
-                        <button class="slide-button">
-                            Первый слайд
-                        </button>
-                    </li>
-                    <li class="slide-radio">
-                        <button class="slide-button">
-                            Второй слайд
-                        </button>
-                    </li>
-                    <li class="slide-radio">
-                        <button class="slide-button">
-                            Третий слайд
-                        </button>
-                    </li>
-                </ul>     
-            </section>
-            <section class="products">
+            <div class="wrapper">
+                <section class="slides container">
+                    <h2 class="visually-hidden">Преимущества</h2>
+                    <ul class="slides-list">
+                        <li class="slides-item">
+                            <b class="slide-slogan">Долго, дорого, скрупулезно.</b>
+                            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                            <a class="button button-slide" href="#">Узнать больше</a>
+                        </li>
+                        <li class="slides-item">
+                            <b class="slide-slogan">Любим математику как никто другой</b>
+                            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                            <a class="button button-slide" href="#">Узнать больше</a>
+                        </li>
+                        <li class="slides-item">
+                            <b class="slide-slogan">Только ночь, только хардкор</b>
+                            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                            <a class="button button-slide" href="#">Узнать больше</a>
+                        </li>
+                    </ul>
+                    <ul class="slides-switches">
+                        <li class="slide-radio">
+                            <button class="slide-button">
+                                Первый слайд
+                            </button>
+                        </li>
+                        <li class="slide-radio">
+                            <button class="slide-button">
+                                Второй слайд
+                            </button>
+                        </li>
+                        <li class="slide-radio">
+                            <button class="slide-button">
+                                Третий слайд
+                            </button>
+                        </li>
+                    </ul>     
+                </section>
+            </div>
+            <section class="products container">
                 <h2 class="visually-hidden">Услуги</h2>
                 <ul class="products-list">
                     <li class="products-item products-web">
@@ -83,7 +85,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="about-us">
+            <section class="about-us container">
                 <h2 class="visually-hidden">О нас</h2>
                 <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
                 <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -110,14 +112,14 @@
             </section>
             <section class="customers">
                 <h2 class="visually-hidden">Заказчики</h2>
-                <ul class="customers-list">
+                <ul class="customers-list container">
                     <li class="customer-item">
                         <a href="https://htmlacademy.ru/intensive/htmlcss" class="customer-logo">
                             <img src="img/html-academy-logo.png" width="199" height="68" alt="Логотип HTML Academy">
                         </a>
                     </li>
                     <li class="customer-item">
-                        <a href="#" class="customer-logo">                       
+                        <a href="#" class="customer-logo">      
                             <img src="img/barbershop-logo.png" width="209" height="90" alt="Логотип Barbershop">
                         </a>
                     </li>
@@ -135,8 +137,8 @@
             </section>
             <section class="contacts">
                 <h2 class="visually-hidden">Контакты</h2>
-                <img src="img/map.png" width="1440" height="416" alt="Расположении дизайн-студии Нёрдс на карте">
-                <img src="img/map-marker.png" width="231" height="190" alt="Маркер дизайн-студии Нёрдс на карте">
+                <img class="map" src="img/map.png" width="1440" height="416" alt="Расположении дизайн-студии Нёрдс на карте">
+                <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Маркер дизайн-студии Нёрдс на карте">
                 <section class="contacts-particular">
                     <h3 class="visually-hidden">Подробные контакты</h3>
                     <b>NЁRDS DESIGN STUDIO</b>
@@ -165,14 +167,16 @@
                 <button class="modal-close" type="button">Закрыть</button>
             </section>
         </main>
-        <footer class="main-footer">
+        <footer class="main-footer container">
             <ul class="social-list">
                 <li><a href="#" class="social-button">Вконтакте</a></li>
                 <li><a href="#" class="social-button">Фейсбук</a></li>
                 <li><a href="#" class="social-button">Инстаграм</a></li>
             </ul>
-            <b>Давайте дружить, это выгодно!</b>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
+            <div class="friendship">
+                <b>Давайте дружить, это выгодно!</b>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
         </footer>
     </body>
 </html> 
