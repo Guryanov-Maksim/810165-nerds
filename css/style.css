@@ -80,7 +80,9 @@ a {
 .pattern-type,
 .slides-list,
 .slides-switches,
-.customers-list {
+.customers-list,
+.assortment-categories,
+.assortment-direction {
     list-style: none;
 }
 
