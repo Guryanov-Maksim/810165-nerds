@@ -19,7 +19,7 @@ a {
 .container-header {
     display: flex;
     width: 1160px;
-    padding: 0 20px;    
+    padding: 0 20px;
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -54,7 +54,7 @@ a {
 
 .main-header-logo {
     width: 160px;
-    height: 65px; 
+    height: 65px;
 }
 
 .basket {
@@ -70,7 +70,7 @@ a {
 .basket:hover,
 .site-navigation a:focus,
 .basket:focus {
-    color: #fb565a; 
+    color: #fb565a;
 }
 
 .site-navigation,
@@ -86,12 +86,22 @@ a {
     list-style: none;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
     position: absolute;
-    clip: rect(0 0 0 0);
+
     width: 1px;
     height: 1px;
     margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .wrapper {
@@ -102,7 +112,7 @@ a {
 .container {
     display: flex;
     width: 1160px;
-    padding: 0 20px;    
+    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -134,7 +144,7 @@ a {
 
 .slides-item:nth-child(2) {
     background: url("../img/slide-2.png") no-repeat right;
-}    
+}
 
 .slides-item:nth-child(3) {
     background: url("../img/slide-3.png") no-repeat right;
@@ -219,15 +229,15 @@ a {
     background: #e5a722;
 }
 
-.button-web:active span{
+.button-web:active span {
     filter: opacity(0.3);
 }
 
-.button-app:active span{
+.button-app:active span {
     filter: opacity(0.3);
 }
 
-.button-presentation:active span{
+.button-presentation:active span {
     filter: opacity(0.3);
 }
 
@@ -236,7 +246,7 @@ a {
 }
 
 .customers {
-   margin-bottom: 80px; 
+    margin-bottom: 80px;
 }
 
 .customers-list {
@@ -250,7 +260,7 @@ a {
 .contacts {
     display: flex;
     width: 1440px;
-    padding: 0;    
+    padding: 0;
     margin: 0 auto;
     flex-direction: column;
 }
@@ -306,7 +316,7 @@ a {
     color: #444;
 }
 
-.catalog-wrapper { 
+.catalog-wrapper {
     background: #eee;
     margin-bottom: 55px;
 }
@@ -334,7 +344,7 @@ a {
     display: flex;
     width: 760px;
     flex-direction: column;
-    margin-bottom: 60px; 
+    margin-bottom: 60px;
 }
 
 .assortment-form {
@@ -354,7 +364,7 @@ a {
     width: 760px;
     padding: 0;
     margin: 0;
-    margin-bottom: 60px; 
+    margin-bottom: 60px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
