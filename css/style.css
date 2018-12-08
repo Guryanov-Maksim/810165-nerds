@@ -629,6 +629,7 @@ input[type="radio"].visually-hidden {
 
 .main-footer {
     justify-content: space-between;
+    margin-bottom: 70px;
 }
 
 .social-list {
@@ -639,24 +640,28 @@ input[type="radio"].visually-hidden {
 }
 
 .social-button {
-    display: inline-block;
+    display: flex;
     width: 78px;
     height: 78px;
     margin-right: 13px;
     border-radius: 50%;
     font-size: 0;
+    background: #e1e1e1;
+    justify-content: center;
+    align-items: center;
 }
 
-.vk-button {
-    background: #e1e1e1 url("../img/vk-icon.svg") no-repeat 50% 50%;
+.social-button:hover,
+.social-button:focus {
+    background-color: #e74246;
 }
 
-.fb-button {
-    background: #e1e1e1 url("../img/fb-icon.svg") no-repeat 50% 50%;
+.social-button:active {
+    background-color: #d7373b;
 }
 
-.insta-button {
-    background: #e1e1e1 url("../img/insta-icon.svg") no-repeat 50% 50%;
+.social-button:active path{
+    fill-opacity: 0.3;
 }
 
 .friendship {
