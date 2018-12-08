@@ -152,7 +152,7 @@ input[type="radio"].visually-hidden {
 
 .slides {
     flex-direction: column;
-    position: relative;
+    position: relative; 
 }
 
 .slides-list,
@@ -277,7 +277,19 @@ input[type="radio"].visually-hidden {
 }
 
 .products {
-    margin-bottom: 122px;
+    position: relative;
+    padding-bottom: 80px;
+    margin-bottom: 40px;
+}
+
+.products::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 1160px;
+    height: 1px;
+    background: rgba(40, 49, 54, 0.2);
+
 }
 
 .products-list {
@@ -290,81 +302,89 @@ input[type="radio"].visually-hidden {
 
 .products-item {
     width: 300px;
-    margin: 0;
-    padding: 0;
 }
 
 .products-item h3 {
+    margin: 171px 0 15px 0;
     font-size: 24px;
     line-height: 30px;
     color: #000;
     text-transform: uppercase;
 }
 
+.products-item p {
+    margin: 0 0 33px 0;
+    padding: 0;
+    max-width: 260px;
+}
+
 .products-web {
-    background: url("../img/illustration-web.png") no-repeat center;
+    background: url("../img/illustration-web.png") no-repeat top center;
 }
 
 .products-app {
-    background: url("../img/illustration-app.png") no-repeat center;
+    background: url("../img/illustration-app.png") no-repeat top center;
 }
 
 .products-presentation {
-    background: url("../img/illustration-presentation.png") no-repeat center;
+    background: url("../img/illustration-presentation.png") no-repeat top center;
 }
 
 .button {
+    display: block;
+    word-break: break-all;
+    padding: 16px 0;
+    border-radius: 3px;
+    text-align: center;
     font-size: 16px;
+    font-weight: bold;
     line-height: 18px;
     color: #fff;
 }
 
 .button-web {
+    width: 160px;
     background: #fb565a;
 }
 
 .button-app {
+    width: 160px;
     background: #00ca74;
 }
 
 .button-presentation {
+    width: 160px;
     background: #efc84a;
 }
 
-.button-web:hover {
+.button-web:hover,
+.button-web:focus {
     background: #e74246;
 }
 
-.button-app:hover {
+.button-app:hover,
+.button-app:focus {
     background: #00bc6c;
 }
 
-.button-presentation:hover {
+.button-presentation:hover,
+.button-presentation:focus {
     background: #eab534;
 }
 
 .button-web:active {
     background: #d7373b;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .button-app:active {
     background: #00aa62;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .button-presentation:active {
     background: #e5a722;
-}
-
-.button-web:active span {
-    filter: opacity(0.3);
-}
-
-.button-app:active span {
-    filter: opacity(0.3);
-}
-
-.button-presentation:active span {
-    filter: opacity(0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .about-us {
