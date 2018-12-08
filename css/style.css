@@ -551,6 +551,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     margin: 0 auto;
     flex-direction: column;
+    position: relative;
 }
 
 .map {
@@ -561,14 +562,59 @@ input[type="radio"].visually-hidden {
 .map-marker {
     width: 231px;
     height: 190px;
+    position: absolute;
+    top: 90px;
+    left: 820px;
 }
 
 .contacts-particular {
     display: flex;
-    padding: 0;
+    padding: 50px 50px 47px 50px;
     margin: 0;
-    width: 319px;
-    flex-direction: column
+    max-width: 319px;
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    left: 140px;
+    background: #fff;
+}
+
+.contacts-particular b {
+    padding-bottom: 22px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.contacts-particular p {
+    margin: 0;
+    padding-left: 2px;
+    max-width: 219px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #666;
+}
+
+.contacts-particular p:nth-of-type(1) {
+    margin-bottom: 18px;
+}
+
+.contacts-particular p:nth-of-type(2) {
+    margin-bottom: 39px;
+}
+
+.contacts-button {
+    background: #fb565a;
+    width: 219px;
+}
+
+.contacts-button:hover,
+.contacts-button:focus {
+    background: #e74246
+}
+
+.contacts-button:active {
+    background: #d7373b;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .modal-feedback {
