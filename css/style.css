@@ -550,6 +550,7 @@ input[type="radio"].visually-hidden {
     width: 1440px;
     padding: 0;
     margin: 0 auto;
+    margin-bottom: 65px;
     flex-direction: column;
     position: relative;
 }
@@ -618,7 +619,8 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback {
-    display: flex;
+    display: none;          /*временно*/
+    /*display: flex;*/
     padding: 0;
     margin: 0 auto;
     width: 960px;
@@ -630,22 +632,48 @@ input[type="radio"].visually-hidden {
 }
 
 .social-list {
+    display: flex;
     width: 260px;
     margin: 0;
     padding: 0;
 }
 
-.friendship {
-    width: 760px;
+.social-button {
+    display: inline-block;
+    width: 78px;
+    height: 78px;
+    margin-right: 13px;
+    border-radius: 50%;
+    font-size: 0;
 }
 
-.main-footer b {
+.vk-button {
+    background: #e1e1e1 url("../img/vk-icon.svg") no-repeat 50% 50%;
+}
+
+.fb-button {
+    background: #e1e1e1 url("../img/fb-icon.svg") no-repeat 50% 50%;
+}
+
+.insta-button {
+    background: #e1e1e1 url("../img/insta-icon.svg") no-repeat 50% 50%;
+}
+
+.friendship {
+    width: 760px;
+    padding-top: 10px;
+}
+
+.friendship b{
+    display: inline-block;
+    margin-bottom: 10px;
     font-size: 36px;
     line-height: 36px;
     color: #000;
 }
 
-.main-footer p {
+.friendship p{
+    margin: 0;
     line-height: 22px;
     color: #444;
 }
