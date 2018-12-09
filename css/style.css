@@ -550,7 +550,7 @@ input[type="radio"].visually-hidden {
     width: 1440px;
     padding: 0;
     margin: 0 auto;
-    margin-bottom: 65px;
+    margin-bottom: 70px;
     flex-direction: column;
     position: relative;
 }
@@ -619,12 +619,118 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback {
-    display: none;          /*временно*/
     /*display: flex;*/
+    display: none;
     padding: 0;
     margin: 0 auto;
     width: 960px;
+    background: #fff;
+    box-shadow: 0 15px 70px -2px #000;
+}
+
+.modal-container {
+    display: flex;
+    padding: 0;
+    margin: 69px auto 84px; 
+    width: 760px;
     flex-direction: column;
+}
+
+.modal-feedback h2 {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 45px;
+    line-height: 45px;
+    color: #000;
+}
+
+.feedback-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.modal-feedback .feedback-form-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #000;
+}
+
+.feedback-form-item:nth-child(1),
+.feedback-form-item:nth-child(2) {
+    width: 360px;
+    margin-bottom: 34px;
+}
+
+.feedback-form-item:nth-child(3) {
+    width: 100%;
+    margin-bottom: 47px;
+}
+
+
+.feedback-form-item label {
+    margin-bottom: 10px;
+}
+
+
+.feedback-form-item input {
+    padding: 13px 12px 14px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.feedback-form-item input:hover {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.feedback-form-item input:focus {
+    border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.feedback-form-item textarea {
+    min-height: 103px;
+    padding: 10px 13px 0;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.feedback-form-item textarea:hover {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.feedback-form-item textarea:focus {
+    border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.button {
+    display: block;
+    word-break: break-all;
+    padding: 16px 0;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #fff;
+}
+
+.feedback-button {
+    text-transform: uppercase;
+    width: 260px;
+    border: none;
+    background: #fb565a;
+}
+
+.modal-close {
+    position: absolute;
+    top: 60px;
+    right: 100px;
 }
 
 .main-footer {
@@ -666,12 +772,12 @@ input[type="radio"].visually-hidden {
 
 .friendship {
     width: 760px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .friendship b{
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
     font-size: 36px;
     line-height: 36px;
     color: #000;
