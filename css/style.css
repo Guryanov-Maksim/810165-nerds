@@ -683,6 +683,40 @@ input[type="radio"].visually-hidden {
     color: #444;
 }
 
+.logo-available:hover,
+.logo-available:focus {
+    filter: opacity(0.8);
+}
+
+.logo-available:active {
+    filter: opacity(0.3);
+}
+
+.site-navigation .site-navigation-current {
+    position: relative;
+}
+
+.site-navigation-current:hover a,
+.site-navigation-current:focus a {
+    cursor: default;
+    color: #000;
+}
+
+.site-navigation-current:active a {
+    filter: opacity(1);
+}
+
+.site-navigation-current::after {
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: 0;
+    width: 74px;
+    height: 2px;
+    background: #fb565a;
+}
+
+
 .catalog-wrapper {
     background: #eee;
     margin-bottom: 55px;
@@ -698,8 +732,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-title {
-    padding-top: 80px;
-    padding-bottom: 115px;
+    padding-top: 78px;
+    padding-bottom: 109px;
     justify-content: center;
 }
 
