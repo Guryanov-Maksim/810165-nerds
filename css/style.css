@@ -1036,43 +1036,115 @@ input[type="radio"].visually-hidden {
     filter: opacity(0.3);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .filter {
     width: 260px;
-    flex-direction: column;
+}
+
+.filter fieldset {
+    margin: 0;
+    margin-bottom: 27px;
+    padding: 0;
+    border: none;
+}
+
+.pattern-type {
+    margin: 0;
+    padding: 0;
 }
 
 .filter legend {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
     color: #000;
-
     text-transform: uppercase;
 }
 
 .filter-option {
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 20px;
     color: #283136;
 }
 
+.filter label {
+    position: relative; 
+    padding-left: 36px; 
+}
+
+.filter-radio + label::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    filter: opacity(0.4);
+}
+
+.filter-radio:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+    filter: opacity(0.4);
+}
+
+.filter-radio:hover + label::before {
+    filter: opacity(1);
+}
+
+.filter-radio:checked:hover + label::after {
+    filter: opacity(1);
+}
+
+.filter-checkbox + label::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 3px;
+    filter: opacity(0.4);
+}
+
+.filter-checkbox:checked + label::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 1px;
+    width: 26px;
+    height: 26px;
+    filter: opacity(0.4);
+    border: none;
+    background: url("../img/checkbox-on.svg") no-repeat 0 0;
+}
+
+.filter-checkbox:checked:hover + label::before {
+    filter: opacity(1);
+}
+
+.filter-checkbox:hover + label::before {
+    filter: opacity(1);
+}
+
 .button-filter {
+    width: 100%;
     color: #000;
     text-transform: uppercase;
     background: #eee;
+    border: none;
 }
 
 .button-filter:hover {
@@ -1080,6 +1152,7 @@ input[type="radio"].visually-hidden {
 }
 
 .button-filter:active {
+    border-top: 3px solid #bfbfbf;
     background: #d5d5d5;
 }
 
