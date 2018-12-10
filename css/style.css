@@ -473,14 +473,10 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
 }
 
-.about-us tr:last-child {
-    font-size: 45px;
-    line-height: 10.06px;
-    color: #000;
-}
-
-.about-us tr:first-child {
-    order: 1;
+.about-us tr {
+    font-size: 16px;
+    line-height: 18px;
+    color: #283136;
 }
 
 .customers-list {
