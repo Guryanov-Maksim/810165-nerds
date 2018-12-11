@@ -616,21 +616,16 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback {
-    /*display: flex;*/
+    position: fixed;
     display: none;
-    padding: 0;
-    margin: 0 auto;
-    width: 960px;
-    background: #fff;
-    box-shadow: 0 15px 70px -2px #000;
-}
-
-.modal-container {
-    display: flex;
-    padding: 0;
-    margin: 69px auto 84px; 
+    /*display: flex;*/
+    top: 65px;
+    left: 50%;
+    padding: 68px 100px 84px;
     width: 760px;
-    flex-direction: column;
+    margin-left: -480px;
+    background: #fff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 }
 
 .modal-feedback h2 {
@@ -665,16 +660,24 @@ input[type="radio"].visually-hidden {
     margin-bottom: 34px;
 }
 
+.feedback-form-item input::placeholder,
+.feedback-form-item textarea::placeholder {
+    color: rgba(68, 68, 68, 0.5);
+}
+
+.feedback-form-item input:focus::placeholder,
+.feedback-form-item textarea:focus::placeholder {
+    color: rgba(68, 68, 68, 1);
+}
+
 .feedback-form-item:nth-child(3) {
     width: 100%;
     margin-bottom: 47px;
 }
 
-
 .feedback-form-item label {
     margin-bottom: 10px;
 }
-
 
 .feedback-form-item input {
     padding: 13px 12px 14px;
@@ -705,18 +708,6 @@ input[type="radio"].visually-hidden {
     border: 2px solid rgba(0, 0, 0, 1);
 }
 
-.button {
-    display: block;
-    word-break: break-all;
-    padding: 16px 0;
-    border-radius: 3px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 18px;
-    color: #fff;
-}
-
 .feedback-button {
     text-transform: uppercase;
     width: 260px;
@@ -726,8 +717,41 @@ input[type="radio"].visually-hidden {
 
 .modal-close {
     position: absolute;
-    top: 60px;
-    right: 100px;
+    top: 77px;
+    right: 88px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+    background: transparent;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: 0;
+    width: 27px;
+    height: 4px;
+    background: rgba(251, 86, 90, 1);
+}
+
+.modal-close::before {
+    transform: rotate(-45deg);
+}
+
+.modal-close::after {
+    transform: rotate(45deg);
+}
+
+.modal-close:hover {
+    filter: opacity(0.3);
+}
+
+.modal-close:active {
+    filter: opacity(0.1);
 }
 
 .main-footer {
