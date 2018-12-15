@@ -1202,6 +1202,10 @@ input[type="radio"].visually-hidden {
     border: none;
 }
 
+.filter fieldset:first-child {
+    margin-bottom: 55px;
+}
+
 .pattern-type {
     margin: 0;
     padding: 0;
@@ -1218,6 +1222,10 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
 }
 
+.large-spacing {
+    letter-spacing: 0.6px;
+}
+
 .filter-option {
     margin-bottom: 20px;
     font-size: 16px;
@@ -1228,6 +1236,85 @@ input[type="radio"].visually-hidden {
 .filter label {
     position: relative; 
     padding-left: 36px; 
+}
+
+.range-filter {
+    width: 260px;
+    margin-top: 34px;
+}
+
+.range-controls {
+    position: relative;
+    height: 41px;
+    margin-bottom: 14px;
+    padding-top: 38px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #eee;
+    border-radius: 3px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: #d7dcde;
+}
+
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    background: #00ca74;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 18px;
+} 
+
+.range-controls .toggle-max {
+    left: 160px;
+}
+
+.price-controls {
+    font-size: 0;
+}
+
+.price-controls label {
+    display: inline-block;
+    width: 50%;
+    padding: 0;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.price-controls input {
+    width: 60px;
+    padding: 8px 10px;
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #283136;
+    border: none;
+    border-radius: 3px;
+    background: #eee;
+}
+
+.max-price {
+    text-align: right;
 }
 
 .filter-radio + label::before {
