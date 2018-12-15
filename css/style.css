@@ -16,12 +16,19 @@ a {
     text-transform: uppercase;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container-header {
     display: flex;
     width: 1160px;
     padding: 0 20px;
     margin: 0 auto;
     justify-content: space-between;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .container h1 {
@@ -64,7 +71,8 @@ a {
 }
 
 .basket {
-    width: 115px;
+    max-width: 300px;
+    padding-left: 40px;
     text-align: right;
     margin-top: 75px;
     position: relative;
@@ -88,6 +96,21 @@ a {
 .basket {
     color: #000;
 }
+
+.site-navigation li {
+    max-width: 438px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+.basket {
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 
 .site-navigation a:hover,
 .basket:hover,
@@ -118,7 +141,6 @@ a {
 .customers-list,
 .assortment-categories,
 .assortment-direction,
-.orders-list,
 .pagination-list {
     list-style: none;
 }
@@ -198,23 +220,34 @@ input[type="radio"].visually-hidden {
     line-height: 55px;
     font-weight: 600;
     color: #000;
+    word-wrap: break-word;
+}
+
+.slides-item:nth-child(1) .slide-slogan {
+    max-width: 400px;
+}
+
+.slides-item:nth-child(2) .slide-slogan {
+    max-width: 520px;
 }
 
 .slides-item:nth-child(3) .slide-slogan {
     max-width: 410px;
 }
 
+.slides-item p {
+    margin: 0;
+    margin-bottom: 40px;
+    word-wrap: break-word;
+}
+
 .slides-item:nth-child(1) p,
 .slides-item:nth-child(2) p {
-    margin: 0;
     max-width: 410px;
-    margin-bottom: 40px;
 }
 
 .slides-item:nth-child(3) p {
-    margin: 0;
     max-width: 350px;
-    margin-bottom: 40px;
 }
 
 .slides-item:nth-child(1) {
@@ -222,7 +255,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slides-item:nth-child(2) {
-    background: url("../img/slide-2.png") no-repeat right;
+    background: url("../img/slide-2.png") no-repeat right 0px;
 }
 
 .slides-item:nth-child(3) {
@@ -312,24 +345,29 @@ input[type="radio"].visually-hidden {
     line-height: 30px;
     color: #000;
     text-transform: uppercase;
+    word-wrap: break-word;
 }
 
 .products-item p {
     margin: 0 0 33px 0;
     padding: 0;
     max-width: 260px;
+    word-wrap: break-word;
 }
 
 .products-web {
     background: url("../img/illustration-web.png") no-repeat top center;
+    background-size: 300px 146px;
 }
 
 .products-app {
     background: url("../img/illustration-app.png") no-repeat top center;
+    background-size: 300px 146px;
 }
 
 .products-presentation {
     background: url("../img/illustration-presentation.png") no-repeat top center;
+    background-size: 300px 146px;
 }
 
 .button {
@@ -390,6 +428,214 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us {
+    position: relative;
+    margin-bottom: 46px;
+    padding-bottom: 75px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.about-us::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 1160px;
+    height: 1px;
+    background: rgba(40, 49, 54, 0.2);
+}
+
+.inner-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.inner-columns:last-child {
+    margin-bottom: 0;
+}
+
+.inner-column-left {
+    width: 660px;
+}
+
+.inner-column-right {
+    width: 460px;
+    text-align: right;
+}
+
+.about-us .big-bold {
+    display: block;
+    margin: 36px 0 33px 0;
+    font-size: 45px;
+    line-height: 45px;
+    color: #000;
+    word-wrap: break-word;
+}
+
+.about-us p {
+    margin: 19px 0 19px 0;
+    word-wrap: break-word;
+}
+
+.about-us b {
+    word-wrap: break-word;
+}
+.upppercase-bold {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.about-us p + .upppercase-bold {
+    margin-top: 38px;
+}
+
+.about-us .custom-list-1 {
+    margin: 24px 0 48px;
+    padding: 0;
+    list-style: none;
+}
+
+.custom-list-1 li {
+    position: relative;
+    margin-bottom: 24px;
+    padding-left: 36px;
+    word-wrap: break-word;
+}
+
+.custom-list-1 li:last-child {
+    margin-bottom: 0;
+}
+
+.custom-list-1 li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 25px;
+    height: 3px;
+    background: #fb565a;
+}
+
+.about-us img {
+    margin: 24px 0 24px;
+}
+
+.about-us img + table {
+    margin-top: 13px;
+}
+
+
+.about-us table {
+    margin: 24px 0 24px;
+}
+
+.about-us caption {
+    font-weight: bold;
+    text-transform: uppercase;
+
+
+
+    text-align: right;
+}
+
+.about-us tr {
+    font-size: 16px;
+    line-height: 18px;
+    color: #283136;
+}
+
+.custom-table-1 {
+    width: 360px;
+    table-layout: fixed;
+    margin-left: 100px;
+
+
+    background: yellow;
+}
+
+.custom-table-1 caption {
+    margin-right: 15px;
+}
+
+.custom-table-1 tr:first-child {
+    margin-right: 15px;
+}
+
+.inner-column-left *:first-child,
+.inner-column-right *:first-child {
+    margin-top: 0;
+}
+
+.inner-column-left *:last-child,
+.inner-column-right *:last-child {
+    margin-bottom: 0;
+}
+
+.customers-list {
+    flex-wrap: wrap;
+    margin-bottom: 82px;
+    padding-bottom: 45px;
+    position: relative;
+}
+
+.customers-list::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 1160px;
+    height: 1px;
+    background: rgba(40, 49, 54, 0.2);
+}
+
+.customers-list {
+    justify-content: space-between;
+}
+
+.customer-item {
+    width: 260px;
+    display: flex;
+    position: relative;
+}
+
+.customer-item::after {
+    content: "";
+    position: absolute;
+    top: 42px;
+    right: -45px;
+    width: 52px;
+    height: 1px;
+    background: rgba(40, 49, 54, 0.2);
+    transform: rotate(90deg);
+}
+
+.customer-item:last-child::after {
+    display: none;
+}
+
+.customer-item a {
+    display: flex;
+    margin: auto;
+    filter: opacity(0.2);
+}
+
+.customer-item a:hover,
+.customer-item a:focus {
+    filter: opacity(1);
+}
+
+.customer-item a:active {
+    filter: opacity(0.1);
+}
+
+.customer-item:nth-child(1) {
+    padding-top: 10px;
+}
+
+.customer-item:nth-child(4) {
+    align-self: flex-end;
+}
+
+/*.about-us {
     position: relative;
     margin-bottom: 48px;
     padding-bottom: 50px;
@@ -480,6 +726,7 @@ input[type="radio"].visually-hidden {
 }
 
 .customers-list {
+    flex-wrap: wrap;
     margin-bottom: 82px;
     padding-bottom: 43px;
     position: relative;
@@ -541,7 +788,7 @@ input[type="radio"].visually-hidden {
 .customer-item:nth-child(4) {
     align-self: flex-end;
 }
-
+*/
 .contacts {
     display: flex;
     width: 1440px;
@@ -572,37 +819,52 @@ input[type="radio"].visually-hidden {
     max-width: 319px;
     flex-direction: column;
     position: absolute;
-    top: 55px;
+    top: 54px;
     left: 140px;
     background: #fff;
+    max-height: 253px;
 }
 
 .contacts-particular b {
-    padding-bottom: 22px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 22px;
+    max-width: 219px;
+    min-height: 30px;
     font-size: 18px;
     line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .contacts-particular p {
     margin: 0;
+    padding: 0;
     padding-left: 2px;
     max-width: 219px;
     font-size: 16px;
     line-height: 18px;
     color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .contacts-particular p:nth-of-type(1) {
     margin-bottom: 18px;
+    min-height: 36px;
 }
 
 .contacts-particular p:nth-of-type(2) {
-    margin-bottom: 39px;
+    margin-bottom: 38px;
+    min-height: 18px;
 }
 
 .contacts-button {
+    min-height: 18px;
     background: #fb565a;
     width: 219px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .contacts-button:hover,
@@ -618,7 +880,7 @@ input[type="radio"].visually-hidden {
 .modal-feedback {
     position: fixed;
     display: none;
-    /*display: flex;*/
+    /*display: block;*/
     top: 65px;
     left: 50%;
     padding: 68px 100px 84px;
@@ -635,6 +897,9 @@ input[type="radio"].visually-hidden {
     font-size: 45px;
     line-height: 45px;
     color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .feedback-form {
@@ -677,6 +942,9 @@ input[type="radio"].visually-hidden {
 
 .feedback-form-item label {
     margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .feedback-form-item input {
@@ -710,9 +978,13 @@ input[type="radio"].visually-hidden {
 
 .feedback-button {
     text-transform: uppercase;
-    width: 260px;
+    min-width: 260px;
     border: none;
     background: #fb565a;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
 }
 
 .modal-close {
@@ -761,16 +1033,24 @@ input[type="radio"].visually-hidden {
 
 .social-list {
     display: flex;
+    flex-wrap: wrap;
     width: 260px;
     margin: 0;
     padding: 0;
 }
 
+.social-list li {
+    margin-right: 13px;
+}
+
+.social-list li:nth-child(3n) {
+    margin-right: 0;
+}
+
 .social-button {
     display: flex;
     width: 78px;
-    height: 78px;
-    margin-right: 13px;
+    height: 78px;   
     border-radius: 50%;
     font-size: 0;
     background: #e1e1e1;
@@ -797,17 +1077,19 @@ input[type="radio"].visually-hidden {
 }
 
 .friendship b{
-    display: inline-block;
+    display: block;
     margin-bottom: 11px;
     font-size: 36px;
     line-height: 36px;
     color: #000;
+    word-wrap: break-word;
 }
 
 .friendship p{
     margin: 0;
     line-height: 22px;
     color: #444;
+    word-wrap: break-word;
 }
 
 .logo-available:hover,

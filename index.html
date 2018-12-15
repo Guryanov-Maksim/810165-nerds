@@ -77,32 +77,40 @@
                 </ul>
             </section>
             <section class="about-us container">
-                <div class="left-column">
-                    <h2 class="visually-hidden">О нас</h2>
-                    <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
-                    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-                    <p>Выполняем заказы на разработку:</p>
-                    <ul class="orders-list">
-                        <li class="orders-item">Веб-сайтов любой сложности</li>
-                        <li class="orders-item">Мобильных приложений для iOS и Android</li>
-                        <li class="orders-item">Слайдшоу и видео для корпоративных презентаций</li>
-                    </ul>
+                <div class="inner-columns">
+                    <div class="inner-column-left">
+                        <h2 class="visually-hidden">О нас</h2>
+                        <b class="big-bold" >Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+                        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+                    </div>
+                    <div class="inner-column-right">
+                        <img src="img/nerds-illustration.png" width="360" height="208" alt="Иллюстрация логотипа Nerds">
+                    </div>
                 </div>
-                <div class="right-column">
-                    <img src="img/nerds-illustration.png" width="360" height="208" alt="Иллюстрация логотипа Nerds">
-                    <table>
-                        <caption>с 2004 года Любим точность во всем:</caption>
-                        <tr>
-                            <th>Уровень самоотдачи</th>
-                            <th>Соблюдение сроков</th>
-                            <th>Минимальная предоплата</th>
-                        </tr>
-                        <tr>
-                            <th>146<span>%</span></th>
-                            <th>100<span>%</span></th>
-                            <th>50<span>%</span></th>
-                        </tr>
-                    </table>
+                <div class="inner-columns">
+                    <div class="inner-column-left">
+                        <p class="upppercase-bold">Выполняем заказы на разработку:</p>
+                        <ul class="custom-list-1">
+                            <li>Веб-сайтов любой сложности</li>
+                            <li>Мобильных приложений для iOS и Android</li>
+                            <li>Слайдшоу и видео для корпоративных презентаций</li>
+                        </ul>
+                    </div>
+                    <div class="inner-column-right">
+                        <table class="custom-table-1">
+                            <caption>с 2004 года Любим точность во всем:</caption>
+                            <tr>
+                                <td>146<span>%</span></td>
+                                <td>100<span>%</span></td>
+                                <td>50<span>%</span></td>
+                            </tr>
+                            <tr>
+                                <td>Уровень самоотдачи</td>
+                                <td>Соблюдение сроков</td>
+                                <td>Минимальная предоплата</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </section>
             <section class="customers">
@@ -143,25 +151,23 @@
                 </section>
             </section>
             <section class="modal-feedback">
-                <div class="modal-container">
-                    <h2>Напишите нам</h2>
-                    <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
-                        <p class="feedback-form-item">
-                            <label for="user-name">Ваше имя:</label>
-                            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-                        </p>
-                        <p class="feedback-form-item">
-                            <label for="user-email">Ваш e-mail:</label>
-                            <input id="user-email" type="email" name="email" placeholder="email@example.com">
-                        </p>
-                        <p class="feedback-form-item">
-                            <label for="user-letter">Текст письма:</label>
-                            <textarea id="user-letter" name="letter" placeholder="В свободной форме"></textarea>
-                        </p>
-                        <button class="button feedback-button" type="submit">Отправить</button>
-                    </form>
-                    <button class="modal-close" type="button">Закрыть</button>
-                </div>
+                <h2>Напишите нам</h2>
+                <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
+                    <p class="feedback-form-item">
+                        <label for="user-name">Ваше имя:</label>
+                        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+                    </p>
+                    <p class="feedback-form-item">
+                        <label for="user-email">Ваш e-mail:</label>
+                        <input id="user-email" type="email" name="email" placeholder="email@example.com">
+                    </p>
+                    <p class="feedback-form-item">
+                        <label for="user-letter">Текст письма:</label>
+                        <textarea id="user-letter" name="letter" placeholder="В свободной форме"></textarea>
+                    </p>
+                    <button class="button feedback-button" type="submit">Отправить</button>
+                </form>
+                <button class="modal-close" type="button">Закрыть</button>
             </section>
         </main>
         <footer class="main-footer container">
