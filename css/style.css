@@ -283,7 +283,6 @@ input[type="radio"].visually-hidden {
 
 .slides-item:nth-child(1) {
     background: url("../img/slide-1.png") no-repeat 93% 18px;
-    /*background: url("../img/avto.jpg") no-repeat 93% 18px;*/
 }
 
 .slides-item:nth-child(2) {
@@ -745,79 +744,6 @@ input[type="radio"].visually-hidden {
     background: yellow;
 }
 
-
-/*.customers-list::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 20px;
-    width: 1160px;
-    height: 2px;
-    background: #eee;
-}
-
-.customer-item {
-    width: 260px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    margin: auto;
-
-    
-
-
-
-
-    background: rgba(251, 89, 90, 0.3)
-}
-
-.customer-item::after {
-    content: "";
-    position: absolute;
-    top: 44px;
-    right: -45px;
-    width: 52px;
-    height: 2px;
-    background: #eee;
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-}
-
-.customer-item:last-child::after {
-    display: none;
-}
-
-.customer-item a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto;
-    opacity: 0.2;
-
-
-    background: yellow;
-}
-
-.customer-item a:hover,
-.customer-item a:focus {
-    opacity: 1;
-}
-
-.customer-item a:active {
-    opacity: 0.1;
-}
-
-.customer-item:nth-child(1) {
-    padding-top: 10px;
-}
-
-.customer-item:nth-child(4) {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-}*/
-
 .contacts {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1019,8 +945,6 @@ input[type="radio"].visually-hidden {
 
 .logo-available:active {
     opacity: 0.3;
-    background: red;
-    position: relative;
 }
 
 .site-navigation .site-navigation-current {
