@@ -2,6 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>HTML Academy: Нёрдс</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
@@ -96,34 +97,32 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <button class="button button-filter" type="submit"><span>Показать</span></button>
+                        <button class="button button-filter" type="submit">Показать</button>
                     </form>
                 </section>
                 <div class="right-column">
                     <section class="assortment">
                         <h2 class="visually-hidden">Сортировка шаблонов</h2>
-                        <form class="assortment-form" action="https://echo.htmlacademy.ru" method="get">
-                            <p>Сортировать:</p>
-                            <ul class="assortment-categories">
-                                <li class="assortment-item">
-                                    <a href="#">По цене</a>
-                                </li>
-                                <li class="assortment-item">
-                                    <a href="#">По типу</a>
-                                </li>
-                                <li class="assortment-item">
-                                    <a href="#">По названию</a>
-                                </li>
-                            </ul>
-                            <ul class="assortment-direction">
-                                <li class="assotrment-item">
-                                    <a href="#">По возрастанию</a>
-                                </li>
-                                <li class="assotrment-item">
-                                    <a href="#">По убыванию</a>
-                                </li>                
-                            </ul>
-                        </form>                
+                        <p>Сортировать:</p>
+                        <ul class="assortment-categories">
+                            <li class="assortment-item">
+                                <a class="assortment-current" href="#">По цене</a>
+                            </li>
+                            <li class="assortment-item">
+                                <a href="#">По типу</a>
+                            </li>
+                            <li class="assortment-item">
+                                <a href="#">По названию</a>
+                            </li>
+                        </ul>
+                        <ul class="assortment-direction">
+                            <li class="assotrment-item assortment-up">
+                                <a class="assortment-current" href="#">По возрастанию</a>
+                            </li>
+                            <li class="assotrment-item assortment-down">
+                                <a href="#">По убывани</a>
+                            </li>                
+                        </ul>               
                     </section>
                     <section class="catalog">
                         <h2 class="visually-hidden">Каталог шаблонов</h2>
@@ -132,7 +131,7 @@
                                 <div class="pattern-particular">
                                     <h3><a class="pattern-name" href="catalog-item-sedona.html">Sedona</a></h3>
                                     <p>Информационный сайт для туристов</p>
-                                    <a class="button-long" href="#">9 900 руб.</a>
+                                    <a class="button-buy" href="#">9 900 руб.</a>
                                 </div>
                                 <div class="catalog-item-image">
                                     <img src="img/sedona.jpg" width="360" height="576" alt="Шаблон сайта Sedona">
@@ -142,7 +141,7 @@
                                 <div class="pattern-particular">
                                     <h3><a class="pattern-name" href="catalog-item-pink.html">Pink App</a></h3>
                                     <p>Продуктовый лендинг приложения для iOS и Android</p>
-                                    <a class="button-long" href="#">9 900 руб.</a>
+                                    <a class="button-buy" href="#">9 900 руб.</a>
                                 </div>
                                 <div class="catalog-item-image">
                                     <img src="img/pink.jpg" width="360" height="576" alt="Шаблон сайта Pink">
@@ -152,7 +151,7 @@
                                 <div class="pattern-particular">
                                     <h3><a class="pattern-name" href="catalog-item-barbershop.html">Barbershop</a></h3>
                                     <p>Сайт салона красоты. Для мужчин, да.</p>
-                                    <a class="button-long" href="#">9 900 руб.</a>
+                                    <a class="button-buy" href="#">9 900 руб.</a>
                                 </div>  
                                 <div class="catalog-item-image">
                                     <img src="img/barbershop.jpg" width="360" height="576" alt="Шаблон сайта Barbershop">
@@ -162,7 +161,7 @@
                                 <div class="pattern-particular">
                                     <h3><a class="pattern-name" href="catalog-item-mishka.html">MISHKA</a></h3>
                                     <p>Интернет-магазин вязаных игрушек</p>
-                                    <a class="button-long" href="#">9 900 руб.</a>
+                                    <a class="button-buy" href="#">9 900 руб.</a>
                                 </div> 
                                 <div class="catalog-item-image">
                                     <img src="img/mishka.jpg" width="360" height="576" alt="Шаблон сайта Mishka">
@@ -172,7 +171,7 @@
                                 <div class="pattern-particular">
                                     <h3><a class="pattern-name" href="catalog-item-a-plus.html">A Plus</a></h3>
                                     <p>Лендинг курсов повышения квалификации</p>
-                                    <a class="button-long" href="#">9 900 руб.</a>
+                                    <a class="button-buy" href="#">9 900 руб.</a>
                                 </div>
                                 <div class="catalog-item-image">
                                     <img src="img/aplus.jpg" width="360" height="576" alt="Шаблон сайта Aplus">
@@ -182,7 +181,7 @@
                                 <div class="pattern-particular">
                                     <h3><a class="pattern-name" href="catalog-item-kvast.html">КВАСТ</a></h3>
                                     <p>Промо-сайт производителя крафтового кваса</p>
-                                    <a class="button-long" href="#">9 900 руб.</a>
+                                    <a class="button-buy" href="#">9 900 руб.</a>
                                 </div>
                                 <div class="catalog-item-image">
                                     <img src="img/kvast.jpg" width="360" height="576" alt="Шаблон сайта Кваст">
@@ -194,13 +193,13 @@
                                 <a>1</a>
                             </li>
                             <li class="pagination-item">
-                                <a class="pagination-available" href="#"><span>2</span></a>
+                                <a class="pagination-available" href="#">2</a>
                             </li>
                             <li class="pagination-item">
-                                <a class="pagination-available" href="#"><span>3</span></a>
+                                <a class="pagination-available" href="#">3</a>
                             </li>
                             <li class="pagination-item pagination-next">
-                                <a class="pagination-available" href="#"><span>Следующая</span></a>
+                                <a class="pagination-available" href="#">Следующая</a>
                             </li>
                         </ul>
                     </section>
@@ -208,6 +207,7 @@
             </div>
             <section class="contacts">
                 <h2 class="visually-hidden">Контакты</h2>
+                <iframe src="https://yandex.ru/map-widget/v1/-/CBF-QOS9~C" width="1440" height="416" allowfullscreen></iframe>
                 <img class="map" src="img/map.png" width="1440" height="416" alt="Расположении дизайн-студии Нёрдс на карте">
                 <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Маркер дизайн-студии Нёрдс на карте">
                 <section class="contacts-particular">
@@ -217,25 +217,6 @@
                     <p>тел. +7 (812) 275-75-75</p>
                     <a href="#" class="button contacts-button">Напишите нам</a>
                 </section>
-            </section>
-            <section class="modal-feedback">
-                <h2>Напишите нам</h2>
-                <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
-                    <p class="feedback-form-item">
-                        <label for="user-name">Ваше имя:</label>
-                        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-                    </p>
-                    <p class="feedback-form-item">
-                        <label for="user-email">Ваш e-mail:</label>
-                        <input id="user-email" type="email" name="email" placeholder="email@example.com">
-                    </p>
-                    <p class="feedback-form-item">
-                        <label for="user-letter">Текст письма:</label>
-                        <textarea id="user-letter" name="letter" placeholder="В свободной форме"></textarea>
-                    </p>
-                    <button class="button feedback-button" type="submit">Отправить</button>
-                </form>
-                <button class="modal-close" type="button">Закрыть</button>
             </section>
         </main>
         <footer class="main-footer container">
@@ -279,5 +260,54 @@
                 <p>Скидка 10% для друзей из социальных сетей.</p>
             </div>
         </footer>
+        <section class="modal-feedback">
+            <h2>Напишите нам</h2>
+            <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
+                <p class="feedback-form-item">
+                    <label for="user-name">Ваше имя:</label>
+                    <input class="user" id="user-name" type="text" name="name" placeholder="Имя Фамилия" pattern="^[А-Яа-яЁё\s]+$" required>
+                </p>
+                <p class="feedback-form-item">
+                    <label for="user-email">Ваш e-mail:</label>
+                    <input id="user-email" type="email" name="email" placeholder="email@example.com">
+                </p>
+                <p class="feedback-form-item">
+                    <label for="user-letter">Текст письма:</label>
+                    <textarea class="letter" id="user-letter" name="letter" placeholder="В свободной форме" required></textarea>
+                </p>
+                <button class="button feedback-button" type="submit">Отправить</button>
+            </form>
+            <button class="modal-close" type="button">Закрыть</button>
+        </section>
+
+        <script>
+            var link = document.querySelector(".contacts-button");
+            var popup = document.querySelector(".modal-feedback");
+            var close = popup.querySelector(".modal-close");
+            var user = popup.querySelector(".user");
+            var form = popup.querySelector(".feedback-form");
+
+            link.addEventListener("click", function (evt) {
+                evt.preventDefault();
+                popup.classList.add("modal-show");
+                user.focus();
+            });
+
+            close.addEventListener("click", function (evt) {
+                evt.preventDefault();
+                popup.classList.remove("modal-show");
+                popup.classList.remove("modal-error");
+            });
+
+            window.addEventListener("keydown", function (evt) {
+                if (evt.keyCode === 27) {
+                    evt.preventDefault();
+                    if (popup.classList.contains("modal-show")) {
+                        popup.classList.remove("modal-show");
+                        popup.classList.remove("modal-error");
+                    }
+                }
+            });
+        </script>
     </body>
 </html> 
