@@ -205,7 +205,7 @@
                 </p>
                 <p class="feedback-form-item">
                     <label for="user-letter">Текст письма:</label>
-                    <textarea class="letter" id="user-letter" name="letter" placeholder="В свободной форме" required></textarea>
+                    <textarea class="letter" id="user-letter" name="letter" placeholder="В свободной форме"></textarea>
                 </p>
                 <button class="button feedback-button" type="submit">Отправить</button>
             </form>
@@ -216,7 +216,8 @@
             var popup = document.querySelector(".modal-feedback");
             var close = popup.querySelector(".modal-close");
             var user = popup.querySelector(".user");
-            var form = popup.querySelector(".feedback-form");
+            var sent = popup.querySelector(".feedback-button");
+            var letter = popup.querySelector(".letter");
 
             link.addEventListener("click", function (evt) {
                 evt.preventDefault();
@@ -228,6 +229,8 @@
                 evt.preventDefault();
                 popup.classList.remove("modal-show");
                 popup.classList.remove("modal-error");
+                letter.classList.remove("letter-error");
+
             });
 
             window.addEventListener("keydown", function (evt) {
@@ -237,6 +240,15 @@
                         popup.classList.remove("modal-show");
                         popup.classList.remove("modal-error");
                     }
+                }
+            });
+
+            sent.addEventListener("click", function (evt) {
+                if (!user.value || (user.checkValidity() == false)) {
+                    evt.preventDefault();
+                    popup.classList.remove("modal-error");
+                    popup.offsetWidth = popup.offsetWidth;
+                    popup.classList.add("modal-error");
                 }
             });
         </script>
