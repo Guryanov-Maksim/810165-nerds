@@ -1076,7 +1076,7 @@ input[type="radio"].visually-hidden {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    max-height: 576px;
+    max-height: 549px;
     margin: 0;
     padding: 0;
     padding-top: 27px;
@@ -1097,10 +1097,9 @@ input[type="radio"].visually-hidden {
     margin: 0;
     margin-bottom: 15px;
     max-width: 340px;
+    min-height: 30px;
     word-wrap: break-word;
     overflow: hidden;
-    -o-text-overflow: ellipsis;
-       text-overflow: ellipsis;
 }
 
 .pattern-name {
@@ -1115,6 +1114,7 @@ input[type="radio"].visually-hidden {
     max-width: 340px;
     font-size: 16px;
     line-height: 18px;
+    min-height: 18px;
     color: #666;
     word-wrap: break-word;
     overflow: hidden;
@@ -1145,6 +1145,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pattern-particular .button-buy {
+    flex-shrink: 0;
     padding: 16px 0;
     border-radius: 3px;
     text-align: center;
