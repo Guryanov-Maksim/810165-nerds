@@ -1049,13 +1049,14 @@ input[type="radio"].visually-hidden {
     position: relative;
     margin-bottom: 33px;
     padding-top: 40px;
+    line-height: 0;
 }
 
 .catalog-item::before {
     content: "";
     position: absolute;
     width: 100%;
-    height: 41px;
+    height: 40px;
     top: 0;
     left: 0;
     background: url("../img/browser.svg") no-repeat;
@@ -1085,6 +1086,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item:hover.catalog-item::before {
     opacity: 1;
+    border-bottom: 1px solid #4d4d4d;
 }
 
 .pattern-particular {
@@ -1163,12 +1165,6 @@ input[type="radio"].visually-hidden {
 
 .pattern-particular .button-buy:active {
     background: #d7373b;
-}
-
-.catalog-item-image {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
 }
 
 .pagination-list {
