@@ -696,7 +696,6 @@ input[type="radio"].visually-hidden {
 }
 
 .customer-item a {
-    display: inline-block;
     opacity: 0.2;
 }
 
