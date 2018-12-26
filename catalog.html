@@ -5,7 +5,7 @@
         <title>HTML Academy: Нёрдс</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style-compressed.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
@@ -17,7 +17,7 @@
                     <ul class="site-navigation">
                         <li><a href="#">Студия</a></li>
                         <li><a href="#">Клиенты</a></li>
-                        <li class="site-navigation-current"><a href="#">Магазин</a></li>
+                        <li class="site-navigation-current"><a>Магазин</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
                 </nav>
@@ -202,7 +202,7 @@
                     <b>NЁRDS DESIGN STUDIO</b>
                     <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
                     <p>тел. +7 (812) 275-75-75</p>
-                    <a href="#" class="button contacts-button">Напишите нам</a>
+                    <a href="write-us.html" class="button contacts-button">Напишите нам</a>
                 </section>
             </section>
         </main>
@@ -266,46 +266,6 @@
             </form>
             <button class="modal-close" type="button">Закрыть</button>
         </section>
-        <script>
-            var link = document.querySelector(".contacts-button");
-            var popup = document.querySelector(".modal-feedback");
-            var close = popup.querySelector(".modal-close");
-            var user = popup.querySelector(".user");
-            var sent = popup.querySelector(".feedback-button");
-            var letter = popup.querySelector(".letter");
-
-            link.addEventListener("click", function (evt) {
-                evt.preventDefault();
-                popup.classList.add("modal-show");
-                user.focus();
-            });
-
-            close.addEventListener("click", function (evt) {
-                evt.preventDefault();
-                popup.classList.remove("modal-show");
-                popup.classList.remove("modal-error");
-                letter.classList.remove("letter-error");
-
-            });
-
-            window.addEventListener("keydown", function (evt) {
-                if (evt.keyCode === 27) {
-                    evt.preventDefault();
-                    if (popup.classList.contains("modal-show")) {
-                        popup.classList.remove("modal-show");
-                        popup.classList.remove("modal-error");
-                    }
-                }
-            });
-
-            sent.addEventListener("click", function (evt) {
-                if (!user.value || (user.checkValidity() == false)) {
-                    evt.preventDefault();
-                    popup.classList.remove("modal-error");
-                    popup.offsetWidth = popup.offsetWidth;
-                    popup.classList.add("modal-error");
-                }
-            });
-        </script>
+        <script src="js/script-compressed.js"></script>
     </body>
 </html> 
