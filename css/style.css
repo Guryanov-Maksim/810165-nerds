@@ -293,6 +293,7 @@ input[type="radio"].visually-hidden {
 
 .slides-controls label {
     display: inline-block;
+    vertical-align: bottom;
     position: relative;
     width: 18px;
     height: 18px;
