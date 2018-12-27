@@ -1082,6 +1082,11 @@ input[type="radio"].visually-hidden {
     margin-bottom: 33px;
     padding-top: 40px;
     line-height: 0;
+    min-height: 576px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(6.5%, transparent), color-stop(6.5%, #f9f5f2));
+    background: -webkit-linear-gradient(transparent 6.5%, #f9f5f2 6.5%);
+    background: -o-linear-gradient(transparent 6.5%, #f9f5f2 6.5%);
+    background: linear-gradient(transparent 6.5%, #f9f5f2 6.5%);
 }
 
 .catalog-item::before {
