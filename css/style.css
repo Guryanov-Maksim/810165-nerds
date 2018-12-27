@@ -388,6 +388,15 @@ input[type="radio"].visually-hidden {
 .products-web {
     background: 
         url("../img/illustration-web.png") no-repeat top center,
+        -webkit-gradient(linear, left top, left bottom, color-stop(100%, #fb565a), color-stop(0%, white)) no-repeat;
+    background: 
+        url("../img/illustration-web.png") no-repeat top center,
+        -webkit-linear-gradient(#fb565a 100%, white 0%) no-repeat;
+    background: 
+        url("../img/illustration-web.png") no-repeat top center,
+        -o-linear-gradient(#fb565a 100%, white 0%) no-repeat;
+    background: 
+        url("../img/illustration-web.png") no-repeat top center,
         linear-gradient(#fb565a 100%, white 0%) no-repeat;
     background-size: 300px 146px;
 }
@@ -395,11 +404,29 @@ input[type="radio"].visually-hidden {
 .products-app {
     background: 
         url("../img/illustration-app.png") no-repeat top center,
+        -webkit-gradient(linear, left top, left bottom, color-stop(100%, #00ca74), color-stop(0%, white)) no-repeat;
+    background: 
+        url("../img/illustration-app.png") no-repeat top center,
+        -webkit-linear-gradient(#00ca74 100%, white 0%) no-repeat;
+    background: 
+        url("../img/illustration-app.png") no-repeat top center,
+        -o-linear-gradient(#00ca74 100%, white 0%) no-repeat;
+    background: 
+        url("../img/illustration-app.png") no-repeat top center,
         linear-gradient(#00ca74 100%, white 0%) no-repeat;
     background-size: 300px 146px;
 }
 
 .products-presentation {
+    background: 
+        url("../img/illustration-presentation.png") no-repeat top center,
+        -webkit-gradient(linear, left top, left bottom, color-stop(100%, #efc849), color-stop(0%, white)) no-repeat;
+    background: 
+        url("../img/illustration-presentation.png") no-repeat top center,
+        -webkit-linear-gradient(#efc849 100%, white 0%) no-repeat;
+    background: 
+        url("../img/illustration-presentation.png") no-repeat top center,
+        -o-linear-gradient(#efc849 100%, white 0%) no-repeat;
     background: 
         url("../img/illustration-presentation.png") no-repeat top center,
         linear-gradient(#efc849 100%, white 0%) no-repeat;
