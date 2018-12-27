@@ -797,6 +797,7 @@ input[type="radio"].visually-hidden {
             transform: translateX(720px);
     width: 1440px;
     height: 416px;
+    background: #f1efe8;
 }
 
 .map-marker {
