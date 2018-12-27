@@ -386,17 +386,23 @@ input[type="radio"].visually-hidden {
 }
 
 .products-web {
-    background: url("../img/illustration-web.png") no-repeat top center;
+    background: 
+        url("../img/illustration-web.png") no-repeat top center,
+        linear-gradient(#fb565a 100%, white 0%) no-repeat;
     background-size: 300px 146px;
 }
 
 .products-app {
-    background: url("../img/illustration-app.png") no-repeat top center;
+    background: 
+        url("../img/illustration-app.png") no-repeat top center,
+        linear-gradient(#00ca74 100%, white 0%) no-repeat;
     background-size: 300px 146px;
 }
 
 .products-presentation {
-    background: url("../img/illustration-presentation.png") no-repeat top center;
+    background: 
+        url("../img/illustration-presentation.png") no-repeat top center,
+        linear-gradient(#efc849 100%, white 0%) no-repeat;
     background-size: 300px 146px;
 }
 
